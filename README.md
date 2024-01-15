@@ -10,19 +10,14 @@ The primary goal of this case study is to provide a hands-on experience in addre
 You can navigate through the analysis using the Case Study Roadmap provided. It includes guiding questions and key tasks at each stage, ensuring a structured and focused approach. Refer to the roadmap regularly to track your progress.
 
 ## Instructions for Use
-1. **Download the Packet**: Start by downloading the packet, which includes all the data and details essential for the analysis.
+1. **Download the file**: Start by downloading the file, which includes all the details essential for the analysis ([INSTRUCTIONS.pdf](https://github.com/AshishLakkapatri/BellaBeat---Google-Data-Analytics-Capstone-Project/files/13941449/INSTRUCTIONS.pdf)).
 
 2. **Reference Details**: Understand the business context, key stakeholders, and the nature of the provided data by reviewing the specifics of the case study.
 
 3. **Follow the Case Study Roadmap**: Utilize the roadmap as your guide, answering guiding questions and completing key tasks at each stage to build a comprehensive case study.
-
-4. **Files Required for Analysis**:
-   - **Data Files Folder: `data_files`**
      
-5. **Google Data Analytics Capstone Project**:
+4. **Google Data Analytics Capstone Project**:
    - `capstone_project_report.pdf`: A comprehensive report detailing the Google Data Analytics Capstone Project, including methodologies, analysis, and conclusions.
-
-6. **Portfolio-Ready Case Study**: Remember that the end goal is to create a case study demonstrating your analytical skills and problem-solving abilities. This document will serve as a tangible representation of your capabilities for potential employers.
 
 ## Key Sections
 
