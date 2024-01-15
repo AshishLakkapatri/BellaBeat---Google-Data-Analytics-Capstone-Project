@@ -1,10 +1,10 @@
 # Bellabeat Data Analysis Case Study
 
 ## Overview
-Welcome to the Bellabeat Data Analysis Case Study! This repository contains all the resources and information you need to dive into the world of data analysis for Bellabeat, a wellness technology company focusing on health products for women. This case study is part of the Google Data Analytics Capstone Project, where, as a junior data analyst, you'll follow a series of real-world tasks, meeting various characters and team members along the way.
+Welcome to the Bellabeat Data Analysis Case Study! This repository contains all the resources and information I need to dive into the world of data analysis for Bellabeat, a wellness technology company focusing on health products for women. This case study is part of the Google Data Analytics Capstone Project, where, as a junior data analyst, I'll follow a series of real-world tasks, meeting various characters and team members along the way.
 
 ## Case Study Objectives
-The primary goal of this case study is to provide a hands-on experience in addressing key business questions through the data analysis process: ask, prepare, process, analyze, share, and act. By the end, you'll have a portfolio-ready case study that showcases your skills and knowledge.
+The primary goal of this case study is to provide a hands-on experience in addressing key business questions through the data analysis process: ask, prepare, process, analyze, share, and act. By the end, I'll have a portfolio-ready case study that showcases my skills and knowledge.
 
 ## Case Study Roadmap
 You can navigate through the analysis using the Case Study Roadmap provided. It includes guiding questions and key tasks at each stage, ensuring a structured and focused approach. Refer to the roadmap regularly to track your progress.
