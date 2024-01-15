@@ -7,7 +7,7 @@ Welcome to the Bellabeat Data Analysis Case Study! This repository contains all 
 The primary goal of this case study is to provide a hands-on experience in addressing key business questions through the data analysis process: ask, prepare, process, analyze, share, and act. By the end, you'll have a portfolio-ready case study that showcases your skills and knowledge.
 
 ## Case Study Roadmap
-Navigate through the analysis using the Case Study Roadmap provided. It includes guiding questions and key tasks at each stage, ensuring a structured and focused approach. Refer to the roadmap regularly to track your progress.
+You can navigate through the analysis using the Case Study Roadmap provided. It includes guiding questions and key tasks at each stage, ensuring a structured and focused approach. Refer to the roadmap regularly to track your progress.
 
 ## Instructions for Use
 1. **Download the Packet**: Start by downloading the packet, which includes all the data and details essential for the analysis.
@@ -18,16 +18,11 @@ Navigate through the analysis using the Case Study Roadmap provided. It includes
 
 4. **Files Required for Analysis**:
    - **Data Files Folder: `data_files`**
-      - `data.csv`: The main dataset for the analysis.
-      - `additional_data.xlsx`: Any additional data needed for a comprehensive analysis.
-
-5. **Project Overview**:
-   - `project_overview.pdf`: An overview document explaining how the project has been carried out. Include information on methodologies, tools used, and major insights gained.
-
-6. **Google Data Analytics Capstone Project**:
+     
+5. **Google Data Analytics Capstone Project**:
    - `capstone_project_report.pdf`: A comprehensive report detailing the Google Data Analytics Capstone Project, including methodologies, analysis, and conclusions.
 
-7. **Portfolio-Ready Case Study**: Keep in mind that the end goal is to create a case study demonstrating your analytical skills and problem-solving abilities. This document will serve as a tangible representation of your capabilities for potential employers.
+6. **Portfolio-Ready Case Study**: Remember that the end goal is to create a case study demonstrating your analytical skills and problem-solving abilities. This document will serve as a tangible representation of your capabilities for potential employers.
 
 ## Key Sections
 
@@ -60,5 +55,5 @@ Navigate through the analysis using the Case Study Roadmap provided. It includes
 - Provide actionable insights for the business.
 
 ## Conclusion
-Active engagement with the Bellabeat Data Analysis Case Study, as part of the Google Data Analytics Capstone Project, not only hones your skills but also creates a valuable asset for your professional portfolio. This experience prepares you for real-world challenges and demonstrates your proficiency to potential employers in the wellness technology industry. Enjoy the journey, and good luck!
+Active engagement with the Bellabeat Data Analysis Case Study, as part of the Google Data Analytics Capstone Project, not only hones your skills but also creates a valuable asset for your professional portfolio. This experience prepares you for real-world challenges and demonstrates your proficiency to potential employers in the wellness technology industry. Enjoy the journey and good luck!
 
