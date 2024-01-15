@@ -15,12 +15,13 @@ You can navigate through the analysis using the Case Study Roadmap provided. It 
 
 ## Instructions for Use
 1. **Download the file**: Start by downloading the file, which includes all the details essential for the analysis ([INSTRUCTIONS.pdf](https://github.com/AshishLakkapatri/BellaBeat---Google-Data-Analytics-Capstone-Project/files/13941449/INSTRUCTIONS.pdf)).
+2. **Download Dataset**:https://www.kaggle.com/datasets/arashnic/fitbit
 
-2. **Reference Details**: Understand the business context, key stakeholders, and the nature of the provided data by reviewing the specifics of the case study.
+3. **Reference Details**: Understand the business context, key stakeholders, and the nature of the provided data by reviewing the specifics of the case study.
 
-3. **Follow the Case Study Roadmap**: Utilize the roadmap as your guide, answering guiding questions and completing key tasks at each stage to build a comprehensive case study.
+4. **Follow the Case Study Roadmap**: Utilize the roadmap as your guide, answering guiding questions and completing key tasks at each stage to build a comprehensive case study.
      
-4. **Google Data Analytics Capstone Project**:
+5. **Google Data Analytics Capstone Project**:
    - `capstone_project_report.pdf`: A comprehensive report detailing the Google Data Analytics Capstone Project, including methodologies, analysis, and conclusions.
 
 ## Key Sections
