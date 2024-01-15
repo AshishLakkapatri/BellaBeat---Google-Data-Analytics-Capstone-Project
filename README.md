@@ -11,7 +11,7 @@ You can navigate through the analysis using the Case Study Roadmap provided. It 
 
 ## Tools Used For Analysis
 1. **Microsoft Excel**
-2. ** Microsoft SQL Server Management Studio**
+2. **Microsoft SQL Server Management Studio**
 
 ## Instructions for Use
 1. **Download the file**: Start by downloading the file, which includes all the details essential for the analysis ([INSTRUCTIONS.pdf](https://github.com/AshishLakkapatri/BellaBeat---Google-Data-Analytics-Capstone-Project/files/13941449/INSTRUCTIONS.pdf)).
