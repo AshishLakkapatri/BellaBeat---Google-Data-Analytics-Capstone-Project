@@ -9,6 +9,10 @@ The primary goal of this case study is to provide a hands-on experience in addre
 ## Case Study Roadmap
 You can navigate through the analysis using the Case Study Roadmap provided. It includes guiding questions and key tasks at each stage, ensuring a structured and focused approach. Refer to the roadmap regularly to track your progress.
 
+## Tools Used For Analysis
+1. **Microsoft Excel**
+2. ** Microsoft SQL Server Management Studio**
+
 ## Instructions for Use
 1. **Download the file**: Start by downloading the file, which includes all the details essential for the analysis ([INSTRUCTIONS.pdf](https://github.com/AshishLakkapatri/BellaBeat---Google-Data-Analytics-Capstone-Project/files/13941449/INSTRUCTIONS.pdf)).
 
