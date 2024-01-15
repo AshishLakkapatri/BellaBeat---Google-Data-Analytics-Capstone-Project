@@ -55,5 +55,5 @@ You can navigate through the analysis using the Case Study Roadmap provided. It 
 - Provide actionable insights for the business.
 
 ## Conclusion
-Active engagement with the Bellabeat Data Analysis Case Study, as part of the Google Data Analytics Capstone Project, not only hones your skills but also creates a valuable asset for your professional portfolio. This experience prepares you for real-world challenges and demonstrates your proficiency to potential employers in the wellness technology industry. Enjoy the journey and good luck!
+Active engagement with the Bellabeat Data Analysis Case Study, as part of the Google Data Analytics Capstone Project, not only hones your skills but also creates a valuable asset for your professional portfolio. Enjoy the journey and good luck!
 
