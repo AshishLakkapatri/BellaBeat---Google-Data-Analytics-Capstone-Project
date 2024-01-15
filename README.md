@@ -15,7 +15,7 @@ You can navigate through the analysis using the Case Study Roadmap provided. It 
 
 ## Instructions for Use
 1. **Download the file**: Start by downloading the file, which includes all the details essential for the analysis ([INSTRUCTIONS.pdf](https://github.com/AshishLakkapatri/BellaBeat---Google-Data-Analytics-Capstone-Project/files/13941449/INSTRUCTIONS.pdf)).
-2. **Download Dataset**: https://www.kaggle.com/datasets/arashnic/fitbit
+2. **Download Official Datasets**: https://www.kaggle.com/datasets/arashnic/fitbit
 
 3. **Reference Details**: Understand the business context, key stakeholders, and the nature of the provided data by reviewing the specifics of the case study.
 
