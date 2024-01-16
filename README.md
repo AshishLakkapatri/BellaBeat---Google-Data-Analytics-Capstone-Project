@@ -58,129 +58,147 @@ You can navigate through the analysis using the Case Study Roadmap provided. It 
 Active engagement with the Bellabeat Data Analysis Case Study, as part of the Google Data Analytics Capstone Project, not only hones your skills but also creates a valuable asset for your professional portfolio. Enjoy the journey and good luck!
 
 # My Analysis
+# Bellabeat Data Analysis
 
+## Overview
+This repository contains SQL queries and scripts for analyzing and cleaning Bellabeat's health and fitness data. The data is organized into various tables, such as `daily_activity_cleaned`, `heartrate_seconds`, `sleep_day`, and `weight_cleaned`. The queries aim to calculate key metrics related to user activities, heart rate, sleep patterns, and weight tracking.
 
-## Calculating number of users and averages
+## Queries
 
-### Tracking their physical activities
-
-SELECT 
-COUNT(DISTINCT ID) AS users_tracking_activity,
-AVG(TotalSteps) AS average_steps,
-AVG(TotalDistance) AS average_Distance,
-AVG(Calories) AS average_calories
-FROM bellabeat.dbo.daily_activity_cleaned
-
-### Tracking heart rate
-
-SELECT 
-COUNT(DISTINCT Id) AS users_tracking_heartRate,
-AVG(Value) AS average_heartRate,
-MIN(Value) AS minimum_heartRate,
-MAX(Value) AS maximum_heartRate
-FROM bellabeat.dbo.heartrate_seconds
-
-
-### Tracking Sleep
-
-SELECT
-COUNT(DISTINCT Id) AS users_tracking_sleep,
-AVG(TotalMinutesAsleep)/60.0 AS average_hours_asleep,
-MIN(TotalMinutesAsleep)/60.0 AS minimum_hours_asleep,
-MAX(TotalMinutesAsleep)/60.0 AS maximum_hours_asleep,
-AVG(TotalMinutesAsleep)/60.0 AS average_hours_InBed
-FROM
-bellabeat.dbo.sleep_day
-
-### Tracking Weight
-
-SELECT
-COUNT(DISTINCT Id) AS users_tracking_Weight,
-AVG(WeightKg) AS average_weight,
-MIN(WeightKg) AS minimum_weight,
-MAX(WeightKg) AS maximum_weight
-FROM
-bellabeat.dbo.weight_cleaned
-
-### Calculate the number of days each user tracked physical activity
-
-SELECT
-DISTINCT Id,
-COUNT(ActivityDate) OVER (PARTITION BY Id) AS days_activity_recorded
-
-FROM
-bellabeat.dbo.daily_activity_cleaned
-
-ORDER BY
-days_activity_recorded DESC
-
-### Calculate Average mnutes for each activity
-
-SELECT
-AVG(VeryActiveMinutes) AS AverageVeryActiveMinutes,
-AVG(FairlyActiveMinutes) AS AverageFairlyActiveMinutes,
-ROUND(AVG(LightlyActiveMinutes)/60.0,2) AS AverageLightlyActiveMinutes,
-ROUND(AVG(SedentaryMinutes)/60.0,2) AS AverageSedentaryMinutes
-FROM
-bellabeat.dbo.daily_activity_cleaned
-
-### Derermine time when users were mostly active
-
- SELECT 
- DISTINCT(CAST(ActivityHour AS TIME)) AS activity_time,
- AVG(TotalIntensity) OVER (PARTITION BY DATEPART(HOUR,ActivityHour)) AS average_intensity,
- AVG(METs/10.0) OVER (PARTITION BY DATEPART(HOUR,ActivityHour)) AS average_METs
-
- FROM bellabeat.dbo.hourly_activity AS hourly_activity
- JOIN bellabeat.dbo.minuteMETs_Narrow AS METs
- ON
- hourly_activity.Id = METs.Id
- AND
- hourly_activity.ActivityHour = METs.ActivityMinute
- ORDER BY 
- average_intensity DESC
-
- 
-### Cleaning Daily_Activity
-
+### Data Cleaning
+#### Cleaning Daily_Activity
+```
+-- Create the cleaned table
 CREATE TABLE bellabeat.dbo.daily_activity_cleaned
-(Id FLOAT, ActivityDate DATETIME2(7), TotalSteps INT, TotalDistance FLOAT, VeryActiveDistance FLOAT, ModeratelyActiveDistance FLOAT,  
-LightActiveDistance FLOAT, SedentaryActiveDistance FLOAT, VeryActiveMinutes INT, FairlyActiveMinutes INT, LightlyActiveMinutes INT, SedentaryMinutes INT, Calories FLOAT)
+(
+    Id FLOAT,
+    ActivityDate DATETIME2(7),
+    TotalSteps INT,
+    TotalDistance FLOAT,
+    VeryActiveDistance FLOAT,
+    ModeratelyActiveDistance FLOAT,  
+    LightActiveDistance FLOAT,
+    SedentaryActiveDistance FLOAT,
+    VeryActiveMinutes INT,
+    FairlyActiveMinutes INT,
+    LightlyActiveMinutes INT,
+    SedentaryMinutes INT,
+    Calories FLOAT
+);
 
-
-INSERT INTO bellabeat.dbo.daily_activity_cleaned (Id,ActivityDate,TotalSteps,TotalDistance,VeryActiveDistance,ModeratelyActiveDistance,LightActiveDistance,SedentaryActiveDistance,
-VeryActiveMinutes,FairlyActiveMinutes,LightlyActiveMinutes,SedentaryMinutes,Calories)
-
-
+-- Insert cleaned data into the new table
+INSERT INTO bellabeat.dbo.daily_activity_cleaned (Id, ActivityDate, TotalSteps, TotalDistance, VeryActiveDistance, ModeratelyActiveDistance, LightActiveDistance, SedentaryActiveDistance, VeryActiveMinutes, FairlyActiveMinutes, LightlyActiveMinutes, SedentaryMinutes, Calories)
 SELECT 
-Id,
-ActivityDate,
-TotalSteps,
-CAST(TotalDistance AS FLOAT) AS TotalDistance,
-CAST(VeryActiveDistance AS FLOAT) AS VeryActiveDistance,
-CAST(ModeratelyActiveDistance AS FLOAT) AS ModeratelyActiveDistance,
-CAST(LightActiveDistance AS FLOAT) AS LightActiveDistance,
-CAST(SedentaryActiveDistance AS FLOAT) AS SedentaryActiveDistance,
-VeryActiveMinutes,
-FairlyActiveMinutes,
-LightlyActiveMinutes,
-SedentaryMinutes,
-Calories
-
+    Id,
+    ActivityDate,
+    TotalSteps,
+    CAST(TotalDistance AS FLOAT) AS TotalDistance,
+    CAST(VeryActiveDistance AS FLOAT) AS VeryActiveDistance,
+    CAST(ModeratelyActiveDistance AS FLOAT) AS ModeratelyActiveDistance,
+    CAST(LightActiveDistance AS FLOAT) AS LightActiveDistance,
+    CAST(SedentaryActiveDistance AS FLOAT) AS SedentaryActiveDistance,
+    VeryActiveMinutes,
+    FairlyActiveMinutes,
+    LightlyActiveMinutes,
+    SedentaryMinutes,
+    Calories
 FROM 
-bellabeat.dbo.daily_Activity
-
-
-### Cleaning WeightLog_info
-
+    bellabeat.dbo.daily_Activity;
+```
+#### Cleaning WeightLog_Info
+```
+-- Create the cleaned table
 CREATE TABLE bellabeat.dbo.weight_cleaned
-(Id FLOAT, Date DATETIME2(7), WeightKg FLOAT)
+(
+    Id FLOAT,
+    Date DATETIME2(7),
+    WeightKg FLOAT
+);
 
-INSERT INTO bellabeat.dbo.weight_cleaned
-
+-- Insert cleaned data into the new table
+INSERT INTO bellabeat.dbo.weight_cleaned (Id, Date, WeightKg)
 SELECT
-Id,
-Date,
-WeightKg
+    Id,
+    Date,
+    WeightKg
+FROM bellabeat.dbo.weightLogInfo;
+```
 
-FROM bellabeat.dbo.weightLogInfo
+### Calculating Number of Users and Averages
+
+#### Tracking Physical Activities
+```sql
+SELECT 
+    COUNT(DISTINCT ID) AS users_tracking_activity,
+    AVG(TotalSteps) AS average_steps,
+    AVG(TotalDistance) AS average_distance,
+    AVG(Calories) AS average_calories
+FROM bellabeat.dbo.daily_activity_cleaned;
+```
+#### Tracking Heart Rate
+```
+SELECT 
+    COUNT(DISTINCT Id) AS users_tracking_heartRate,
+    AVG(Value) AS average_heartRate,
+    MIN(Value) AS minimum_heartRate,
+    MAX(Value) AS maximum_heartRate
+FROM bellabeat.dbo.heartrate_seconds;
+```
+
+#### Tracking Sleep
+```
+SELECT
+    COUNT(DISTINCT Id) AS users_tracking_sleep,
+    AVG(TotalMinutesAsleep)/60.0 AS average_hours_asleep,
+    MIN(TotalMinutesAsleep)/60.0 AS minimum_hours_asleep,
+    MAX(TotalMinutesAsleep)/60.0 AS maximum_hours_asleep,
+    AVG(TotalMinutesAsleep)/60.0 AS average_hours_inBed
+FROM bellabeat.dbo.sleep_day;
+```
+#### Tracking Weight
+```
+SELECT
+    COUNT(DISTINCT Id) AS users_tracking_Weight,
+    AVG(WeightKg) AS average_weight,
+    MIN(WeightKg) AS minimum_weight,
+    MAX(WeightKg) AS maximum_weight
+FROM bellabeat.dbo.weight_cleaned;
+```
+## Additional Analysis
+
+#### Number of Days Each User Tracked Physical Activity
+```
+SELECT
+    DISTINCT Id,
+    COUNT(ActivityDate) OVER (PARTITION BY Id) AS days_activity_recorded
+FROM bellabeat.dbo.daily_activity_cleaned
+ORDER BY days_activity_recorded DESC;
+```
+
+#### Average Minutes for Each Activity
+
+```
+SELECT
+    AVG(VeryActiveMinutes) AS AverageVeryActiveMinutes,
+    AVG(FairlyActiveMinutes) AS AverageFairlyActiveMinutes,
+    ROUND(AVG(LightlyActiveMinutes)/60.0, 2) AS AverageLightlyActiveMinutes,
+    ROUND(AVG(SedentaryMinutes)/60.0, 2) AS AverageSedentaryMinutes
+FROM bellabeat.dbo.daily_activity_cleaned;
+```
+
+#### Determine Time When Users Were Mostly Active
+```
+SELECT 
+    DISTINCT(CAST(ActivityHour AS TIME)) AS activity_time,
+    AVG(TotalIntensity) OVER (PARTITION BY DATEPART(HOUR, ActivityHour)) AS average_intensity,
+    AVG(METs/10.0) OVER (PARTITION BY DATEPART(HOUR, ActivityHour)) AS average_METs
+FROM bellabeat.dbo.hourly_activity AS hourly_activity
+JOIN bellabeat.dbo.minuteMETs_Narrow AS METs
+ON hourly_activity.Id = METs.Id
+AND hourly_activity.ActivityHour = METs.ActivityMinute
+ORDER BY average_intensity DESC;
+```
+
+
+
+
