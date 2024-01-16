@@ -57,3 +57,9 @@ You can navigate through the analysis using the Case Study Roadmap provided. It 
 ## Conclusion
 Active engagement with the Bellabeat Data Analysis Case Study, as part of the Google Data Analytics Capstone Project, not only hones your skills but also creates a valuable asset for your professional portfolio. Enjoy the journey and good luck!
 
+# My Analysis
+
+![Analysis 1](https://github.com/AshishLakkapatri/BellaBeat---Google-Data-Analytics-Capstone-Project/assets/69083448/3f0ae34c-abd3-4f7f-b888-74d05d5695e6)
+![Daily_Activity_Analysis](https://github.com/AshishLakkapatri/BellaBeat---Google-Data-Analytics-Capstone-Project/assets/69083448/3a8a17d0-0189-44c0-bdd5-d26335cc8e47)
+![Intensity Analysis](https://github.com/AshishLakkapatri/BellaBeat---Google-Data-Analytics-Capstone-Project/assets/69083448/20575979-9ce1-4acb-b82a-d49fe9f88d22)
+![Daily_activity_cleaning](https://github.com/AshishLakkapatri/BellaBeat---Google-Data-Analytics-Capstone-Project/assets/69083448/643e9896-6194-4297-80a7-47829ca2176b)
