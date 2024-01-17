@@ -20,9 +20,6 @@ You can navigate through the analysis using the Case Study Roadmap provided. It 
 3. **Reference Details**: Understand the business context, key stakeholders, and the nature of the provided data by reviewing the specifics of the case study.
 
 4. **Follow the Case Study Roadmap**: Utilize the roadmap as your guide, answering guiding questions and completing key tasks at each stage to build a comprehensive case study.
-     
-5. **Google Data Analytics Capstone Project**:
-   - `capstone_project_report.pdf`: A comprehensive report detailing the Google Data Analytics Capstone Project, including methodologies, analysis, and conclusions has been included in this repo.
 
 ## Key Sections
 
