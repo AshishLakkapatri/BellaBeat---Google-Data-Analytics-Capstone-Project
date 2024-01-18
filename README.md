@@ -53,20 +53,3 @@ You can navigate through the analysis using the Case Study Roadmap provided. It 
 
 ## Conclusion
 Active engagement with the Bellabeat Data Analysis Case Study, as part of the Google Data Analytics Capstone Project, not only hones your skills but also creates a valuable asset for your professional portfolio. Enjoy the journey and good luck!
-
-# My Analysis
-# Bellabeat Data Analysis
-
-## Overview
-This repository contains SQL queries and scripts for analyzing and cleaning Bellabeat's health and fitness data. The data is organized into various tables, such as `daily_activity_cleaned`, `heartrate_seconds`, `sleep_day`, and `weight_cleaned`. The queries aim to calculate key metrics related to user activities, heart rate, sleep patterns, and weight tracking.
-
-## Queries
-
-![Cleaning_Daily_activity](https://github.com/AshishLakkapatri/BellaBeat---Google-Data-Analytics-Capstone-Project/assets/69083448/3ad5e9ab-4b18-4c10-bb1f-7fd9147b9301)
-![Cleaning_WeightLog](https://github.com/AshishLakkapatri/BellaBeat---Google-Data-Analytics-Capstone-Project/assets/69083448/d1bbfcee-eb3c-43b0-95ef-2ecbe00308b4)
-![Analysis](https://github.com/AshishLakkapatri/BellaBeat---Google-Data-Analytics-Capstone-Project/assets/69083448/96e68135-8bf9-437e-951f-a0db366e5907)
-![Analysing Intensities](https://github.com/AshishLakkapatri/BellaBeat---Google-Data-Analytics-Capstone-Project/assets/69083448/4483958f-1c8d-4475-b85f-03f9fac64c8f)
-![Daily Activity_Analysis](https://github.com/AshishLakkapatri/BellaBeat---Google-Data-Analytics-Capstone-Project/assets/69083448/811cac70-d8be-462c-8027-aa32f6908a4b)
-
-
-
